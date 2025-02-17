@@ -1,0 +1,150 @@
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .brand {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #f44336;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: white;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.dashboard {
+  margin-top: 30px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.stat-box {
+  background-color: #e3f2fd; /* Color suave */
+  border-radius: 15px; /* Bordes más redondeados */
+  padding: 20px;
+  width: 22%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efecto al pasar el ratón */
+}
+
+.stat-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1976d2; /* Color para el título */
+}
+
+.stat-box p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.chart-container {
+  margin-top: 40px;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+  
